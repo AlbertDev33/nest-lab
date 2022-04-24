@@ -12,6 +12,7 @@ datasource db {
 
 model Customer {
   id String @id @default(uuid())
+  authUserId String? @unique
 
   purchase Purchase[]
 
